@@ -26,4 +26,61 @@ export class ProjectsService {
     let project = this.projects.find(p => p.id === id);
     return project;
   }
+
+  getProjectByFilter(filterTags : Tag[]){
+    let filterProjects : Project[] = [];
+
+    this.projects.forEach( function(project) {
+      let foundAll = true;
+
+      filterTags.forEach( function(filterTag) {
+        if(project.tags.includes(filterTag) == false){
+          foundAll = false;
+        }
+      });
+
+      if(foundAll){
+        filterProjects.push(project);
+      }
+    });
+
+    return filterProjects;
+  }
+
+  getAllTags(): Tag[] {
+    return [
+      Tag.ANGULAR,
+      Tag.TYPESCIPT,
+      Tag.JAVA,
+      Tag.JAVASCRIPT,
+      Tag.PYTHON,
+      Tag.NODEJS,
+      Tag.CSHARP,
+      Tag.ASPNET,
+      Tag.REACT
+    ];
+  }
+
+  getTagsByCatg(categori : string): Tag[] {
+    if(categori === 'languages'){
+      return [
+        Tag.TYPESCIPT,
+        Tag.JAVA,
+        Tag.JAVASCRIPT,
+        Tag.PYTHON,
+        Tag.CSHARP,
+      ];
+    }else{
+      return [
+        Tag.ANGULAR,
+        Tag.NODEJS,
+        Tag.ASPNET,
+        Tag.REACT
+      ];
+    }
+    
+  }
+
+
+
 }

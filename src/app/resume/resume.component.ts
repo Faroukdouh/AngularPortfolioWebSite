@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -8,11 +8,24 @@ import { Title } from '@angular/platform-browser';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor(private titleService: Title) {
+  isWorkExperoenceOpen: boolean = false;
+  isEducationOpen: boolean = false;
+  isSkillsOpen: boolean = false;
+
+  constructor(private titleService: Title, private rendered: Renderer2) {
     this.titleService.setTitle("Farouk DOUH - Resume")
    }
 
   ngOnInit(): void {
+  }
+
+  downloadFile(){
+    const link = this.rendered.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', '../../assets/cv_Farouk_DOUH.pdf');
+    link.setAttribute('download', 'cv_Farouk_DOUH.pdf');
+    link.click();
+    link.remove();
   }
 
 }
