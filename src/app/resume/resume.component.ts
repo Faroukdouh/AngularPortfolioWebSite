@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ProjectsService } from '../_services/projects.service';
 
 @Component({
   selector: 'app-resume',
@@ -12,7 +13,7 @@ export class ResumeComponent implements OnInit {
   isEducationOpen: boolean = false;
   isSkillsOpen: boolean = false;
 
-  constructor(private titleService: Title, private rendered: Renderer2) {
+  constructor(private titleService: Title, private rendered: Renderer2, private projectService: ProjectsService) {
     this.titleService.setTitle("Farouk DOUH - Resume")
    }
 
@@ -26,6 +27,10 @@ export class ResumeComponent implements OnInit {
     link.setAttribute('download', 'cv_Farouk_DOUH.pdf');
     link.click();
     link.remove();
+  }
+
+  getTagsByCatg(categorie : string){
+    return this.projectService.getTagsByCatg(categorie);
   }
 
 }

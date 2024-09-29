@@ -1,0 +1,25 @@
+.tags-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de revenir à la ligne */
+    gap: 8px; /* Espace entre les éléments */
+    width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
+    box-sizing: border-box; /* Inclut padding et border dans la taille totale */
+    overflow: hidden; /* Empêche les éléments de dépasser le conteneur */
+  }
+  
+  .tag {
+    /* padding: 5px 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 14px; */
+    white-space: nowrap; /* Empêche que le contenu des tags ne soit coupé en plusieurs lignes */
+
+    padding: 5 10px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+  }
