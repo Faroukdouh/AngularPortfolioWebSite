@@ -1,0 +1,46 @@
+/* Nav styles */
+.navbar {
+    /* background-color: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    position: relative; background: rgb(14, 14, 14); border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Effet d'ombre subtile */
+    /* border-radius: 8px; Légèrement arrondi */
+    padding: 20px 0;
+    margin-top: 20px; /* Espace entre le header et le nav */
+}
+
+.nav-link {
+    color: white; /* Couleur gris clair pour les liens */
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #81c784; /* Couleur au survol */
+    background-color: #678d6740; /* Fond léger au survol */
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    color: #81c784; /* Couleur du lien actif */
+    border-bottom: 2px solid #81c784; /* Soulignement subtil pour le lien actif */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center; /* Centrer les éléments dans le conteneur */
+}
+
+.navbar .nav-item {
+    padding: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}

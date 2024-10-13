@@ -1,0 +1,33 @@
+.test{
+    background: transparent;
+    color: white;
+    padding: 8px;
+    border: 1px solid #81c784;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.test:hover {
+    background-color: #81c784;
+    color: white;
+}
+
+.test2{
+    background: transparent;
+    color: white;
+    padding: 8px;
+    border: 1px solid #6a6a6a;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.test2:hover {
+    background-color: #6a6a6a;
+    color: white;
+}

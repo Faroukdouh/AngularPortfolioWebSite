@@ -12,4 +12,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isNightMode = false;
+
+toggleNightMode() {
+  this.isNightMode = !this.isNightMode;
+  if (this.isNightMode) {
+    document.body.classList.add('night-mode');
+  } else {
+    document.body.classList.remove('night-mode');
+  }
+}
+
 }

@@ -1,0 +1,52 @@
+.container {
+    margin-top: 2rem; /* Espacement en haut */
+}
+
+h2 {
+    color: #81c784; /* Couleur verte pour les titres */
+}
+
+ul {
+    padding-left: 0; /* Suppression du padding par défaut */
+}
+
+ul li {
+    margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
+    color: white; /* Couleur du texte */
+}
+
+.about-section, .project-section {
+    background-color: rgb(14, 14, 14);
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.2s; /* Animation douce */
+    padding: 20px;
+    position: relative;
+}
+
+.about-section:hover, .project-section:hover {
+    transform: scale(1.02); /* Zoom léger au survol */
+}
+
+.about-text {
+    font-size: 18px;
+    color: white;
+}
+
+.personal-info li b {
+    color: #81c784; /* Couleur verte pour les titres */
+}
+
+img.rounded-circle {
+    box-shadow: 0 0 10px 3px rgba(181, 180, 180, 0.8); /* Effet d'ombre autour de l'image */
+}
+
+.carousel-img {
+    display: block;
+    width: 100%;
+}
+
+.project-summary, .project-description, .visit-section {
+    font-size: 18px;
+    color: white;
+}

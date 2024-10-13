@@ -1,17 +1,16 @@
-<div class="container">
-
-     <div class="mb-2">
-        <div>
-            <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">Filter</button>
-            <button class="btn btn-outline-secondary mb-2 me-2" (click)="resetFilters()" [hidden]="!faltering">Reset</button>
+<div class="container mt-3">
+    <div class="mb-2">
+        <div class="d-flex justify-content-center">
+            <button class="test" (click)="isCollapsed = !isCollapsed">Filter</button>
+            <button class="test2" (click)="resetFilters()" [hidden]="!faltering">Reset</button>
         </div>
 
         <div [collapse]="isCollapsed" [isAnimated]="true">
-            <div class="card shadow text-center" style="background-color: white;">
+            <div class="card shadow text-center mb-3" style="position: relative; background-color: rgb(14, 14, 14); border-radius: 10px; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); color: white;">
                 <form>
                     <div class="row mx-0">
                         <div class="col">
-                            <small><b>Languages :</b></small>
+                            <small style="color: #81c784; " ><b>Languages:</b></small>
                             <div class="form-group">
                                 <div *ngFor="let tag of getTagsByCatg('languages')">
                                     <div class="form-check">
@@ -26,8 +25,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <small><b>Frameworks :</b></small>
+                            <small style="color: #81c784; " ><b>Frameworks:</b></small>
                             <div class="form-group">
                                 <div *ngFor="let tag of getTagsByCatg('frameworks')">
                                     <div class="form-check">
@@ -42,8 +42,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <small><b>Tools :</b></small>
+                            <small style="color: #81c784; " ><b>Tools:</b></small>
                             <div class="form-group">
                                 <div *ngFor="let tag of getTagsByCatg('tools')">
                                     <div class="form-check">
@@ -58,8 +59,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <small><b>Methodologies :</b></small>
+                            <small style="color: #81c784; " ><b>Methodologies:</b></small>
                             <div class="form-group">
                                 <div *ngFor="let tag of getTagsByCatg('methodologies')">
                                     <div class="form-check">
@@ -74,8 +76,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <small><b>Databases :</b></small>
+                            <small style="color: #81c784; " ><b>Databases:</b></small>
                             <div class="form-group">
                                 <div *ngFor="let tag of getTagsByCatg('databases')">
                                     <div class="form-check">
@@ -90,8 +93,9 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col">
-                            <small><b>Security :</b></small>
+                            <small style="color: #81c784; " ><b>Security:</b></small>
                             <div class="form-group">
                                 <div *ngFor="let tag of getTagsByCatg('security')">
                                     <div class="form-check">
@@ -110,11 +114,17 @@
                 </form>
             </div>
         </div>
-     </div>
+    </div>
 
-    <div class="row">
-        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4" style="max-width: 380px; min-width: 380px;">
+    <!-- <div class="row">
+        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4">
+            <app-project-card [project]="project"></app-project-card>
+        </div>
+    </div> -->
+    <div class="row justify-content-center">
+        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center">
             <app-project-card [project]="project"></app-project-card>
         </div>
     </div>
+    
 </div>

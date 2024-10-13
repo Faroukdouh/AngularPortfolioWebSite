@@ -1,14 +1,14 @@
 <div class="conatiner text-center">
-    <button (click)="downloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <button (click)="downloadFile()" class="test">Download PDF Resume</button>
 
     <div class="d-flex justify-content-center">
-        <div class="pb-2" style="width: 70%;">
+        <div class="pb-2" style="width: 90%;">
             <accordion [isAnimated]="true" class="shadow">
                 <accordion-group [(isOpen)]="isWorkExperoenceOpen">
 
                     <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                         <div style="visibility: hidden;">></div>
-                        <div class="btn-link">Work Experience</div>
+                        <div class="btn">Work Experience</div>
                         <div style="width: 10.95px;">
                             <div *ngIf="!isWorkExperoenceOpen" style="color: white;">></div>
                             <div *ngIf="isWorkExperoenceOpen" style="color: white;">v</div>
@@ -17,7 +17,7 @@
 
                     <div style="text-align: left;">
                         <h2 class="mb-0">Information Systems Engineer.</h2>
-                        <h5 class="text-primary">EADN - Entreprise d'Appui au Developpement Numérique (12/2022 - Today)
+                        <h5>EADN - Entreprise d'Appui au Developpement Numérique (12/2022 - Today)
                         </h5>
                         <p>As a member of a team of six engineers, including a project manager, I contributed to the
                             design and implementation of two information systems for the Ministry of Tourism and
@@ -49,7 +49,7 @@
                     <hr>
                     <div style="text-align: left;">
                         <h2 class="mb-0">Master's internship</h2>
-                        <h5 class="text-primary">ELIT - EL Djazair Information Technology 01/2022 - 06/2022</h5>
+                        <h5 >ELIT - EL Djazair Information Technology 01/2022 - 06/2022</h5>
                         <p>As a final-year Master's student, I completed an internship at ELIT. As part of a two-person
                             team, I contributed to the design and implementation of a GMAO (Gestion de
                             Maintenance Assistée par Ordinateur) in connected/disconnected mode with data
@@ -70,7 +70,7 @@
                     <hr>
                     <div style="text-align: left;">
                         <h2 class="mb-0">Final year project (Bachelor's degree).</h2>
-                        <h5 class="text-primary">Saad Dahlab University of Blida 03/2020 - 06/2020</h5>
+                        <h5 >Saad Dahlab University of Blida 03/2020 - 06/2020</h5>
                         <p>As a final-year Bachelor's student and a member of a two-person team, I participated in the
                             design and implementation of a web application for managing final year projects (P.F.E) for
                             Master's students within the computer science department.</p>
@@ -92,7 +92,7 @@
 
                     <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                         <div style="visibility: hidden;">></div>
-                        <div class="btn-link">Education</div>
+                        <div class="btn">Education</div>
                         <div style="width: 10.95px;">
                             <div *ngIf="!isEducationOpen" style="color: white;">></div>
                             <div *ngIf="isEducationOpen" style="color: white;">v</div>
@@ -101,17 +101,17 @@
 
                     <div style="text-align: left;">
                         <h3 class="mb-0">Master's Degree in Software Engineering</h3>
-                        <h5 class="text-primary">Saad Dahlab University of Blida 09/2020 - 07/2022</h5>
+                        <h5 >Saad Dahlab University of Blida 09/2020 - 07/2022</h5>
                     </div>
                     <hr>
                     <div style="text-align: left;">
                         <h3 class="mb-0">Bachelor's Degree in Information Systems and Software Engineering.</h3>
-                        <h5 class="text-primary">Saad Dahlab University of Blida 09/2017 - 07/2020</h5>
+                        <h5 >Saad Dahlab University of Blida 09/2017 - 07/2020</h5>
                     </div>
                     <hr>
                     <div style="text-align: left;">
                         <h3 class="mb-0">Baccalaureate in Experimental Sciences</h3>
-                        <h5 class="text-primary">Rabah Bitat high school 09/2014 - 06/2017</h5>
+                        <h5 >Rabah Bitat high school 09/2014 - 06/2017</h5>
                     </div>
 
                 </accordion-group>
@@ -120,35 +120,15 @@
 
                     <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                         <div style="visibility: hidden;">></div>
-                        <div class="btn-link">Skills</div>
+                        <div class="btn">Skills</div>
                         <div style="width: 10.95px;">
                             <div *ngIf="!isSkillsOpen" style="color: white;">></div>
                             <div *ngIf="isSkillsOpen" style="color: white;">v</div>
                         </div>
                     </button>
 
-                    <!-- <div style="text-align: left;">
-                        <h5 class="mb-0">Programming Languages & Frameworks :</h5>
-                        <ul>
-                            <li>Java, JEE, Spring Boot, JUnit5, Api RESTful, Angular,
-                                Jsf, JavaFx, Maven, SQL, Liquibase, Git, Keycloak, Scrum</li>
-                        </ul>
-                    </div>
                     <div style="text-align: left;">
-                        <h5 class="mb-0">Design and Modeling :</h5>
-                        <ul>
-                            <li>UML</li>
-                        </ul>
-                    </div>
-                    <div style="text-align: left;">
-                        <h5 class="mb-0">Database :</h5>
-                        <ul>
-                            <li>MySQL, PostgreSQL</li>
-                        </ul>
-                    </div> -->
-
-                    <div style="text-align: left;">
-                        <h5 class="mb-0">Programming Languages :</h5>
+                        <h4 class="mb-0">Programming Languages :</h4>
                         
                         <div class="d-flex flex-warp justify-content-center">
                             <div class="tags-container">
@@ -160,7 +140,7 @@
                         </div>
                         <br>
 
-                        <h5 class="mb-0">Frameworks :</h5>
+                        <h4 class="mb-0">Frameworks :</h4>
                         
                         <div class="d-flex flex-warp justify-content-center">
                             <div class="tags-container">
@@ -172,7 +152,7 @@
                         </div>
                         <br>
 
-                        <h5 class="mb-0">Tools :</h5>
+                        <h4 class="mb-0">Tools :</h4>
                         
                         <div class="d-flex flex-warp justify-content-center">
                             <div class="tags-container">
@@ -184,7 +164,7 @@
                         </div>
                         <br>
 
-                        <h5 class="mb-0">Methodologies :</h5>
+                        <h4 class="mb-0">Methodologies :</h4>
                         
                         <div class="d-flex flex-warp justify-content-center">
                             <div class="tags-container">
@@ -196,7 +176,7 @@
                         </div>
                         <br>
 
-                        <h5 class="mb-0">Databases :</h5>
+                        <h4 class="mb-0">Databases :</h4>
                         
                         <div class="d-flex flex-warp justify-content-center">
                             <div class="tags-container">
@@ -208,7 +188,7 @@
                         </div>
                         <br>
 
-                        <h5 class="mb-0">Security :</h5>
+                        <h4 class="mb-0">Security :</h4>
                         
                         <div class="d-flex flex-warp justify-content-center">
                             <div class="tags-container">
@@ -218,7 +198,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+                         
                     </div>
 
                 </accordion-group>

@@ -1,31 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
 body {
-    background-color: #e9ecef;
-    margin: 0; 
-    padding: 0;
-  }
-
-  /* body {
-    background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; 
-    margin: 0; 
-    padding: 0;
-  } */
-
-.container {
-    max-width: 1140px;;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Dégradé de fond */
+  min-height: 100vh;
+  margin: 0; 
+  padding: 0;
+  font-family: 'PT Serif', serif;
 }
 
+/* Container settings */
+.container {
+  max-width: 1140px;
+  margin: auto; /* Centrer le conteneur */
+  padding: 20px; /* Espacement interne */
+}
+
+/* Tag styles */
 .tag {
-    padding: 0 20px;
-    height: 30px;
-    width: fit-content;
-    font-size: 14px;
-    line-height: 30px;
-    border-radius: 25px;
-    background-color: blue;
-    color: white;
+  padding: 0 20px;
+  height: 30px;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: #007bff; /* Couleur principale */
+  color: white;
+  transition: background-color 0.3s; /* Transition pour l'effet hover */
+}
+
+/* Hover effect for tags */
+.tag:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: linear-gradient(135deg, #2c3e50, #000000); */
+  background: rgb(57, 47, 47);
+background: radial-gradient(circle, rgb(27, 25, 25) 13%, rgb(45, 45, 45) 71%, rgba(0,0,0,1) 100%);
+
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-repeat: no-repeat; /* Prevent background repeating */
+  background-attachment: fixed; /* Keeps the background in place while scrolling */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+
+body.night-mode {
+  background: linear-gradient(135deg, #2c3e50, #000000);  /* Darker colors for night mode */
 }
