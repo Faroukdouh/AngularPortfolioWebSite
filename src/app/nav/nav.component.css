@@ -44,3 +44,44 @@
         padding: 8px 15px;
     }
 }
+
+/* Optional: Style the navbar toggle button */
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255,255,255,0.8)' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/* Styles généraux pour la nav */
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+/* Responsive: centrer les éléments sur les petits écrans */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center; /* Centre le contenu lorsque le menu se déroule */
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column; /* Empile les items en colonne */
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-bottom: 10px; /* Espacement entre les éléments dans le mode "small screen" */
+    }
+}
