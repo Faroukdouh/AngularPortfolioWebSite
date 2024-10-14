@@ -32,10 +32,51 @@ a img:hover {
 
 .linkedin-icon svg {
     transition: transform 0.3s ease;
-    margin: 10px;
 }
 
 .linkedin-icon:hover svg {
     transform: scale(1.1); /* Scales the icon slightly on hover */
 }
 
+.social-icons a {
+    margin: 0 7px; /* Ajoute un espacement entre les icônes */
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.display-4 {
+    font-weight: bold;
+    color: #81c784;
+}
+
+h3 {
+    font-weight: 300;
+    color: #f5f5f5;
+}
+
+/* Icônes centrées sur les petits écrans */
+.social-icons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        bottom: auto; /* Remet la position à automatique */
+        right: auto;
+    }
+
+    .social-icons a {
+        margin: 0 7px; /* Ajoute un espacement entre les icônes */
+    }
+}
