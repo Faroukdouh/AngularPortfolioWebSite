@@ -4,6 +4,7 @@ export class Tag{
     static readonly JAVA = new Tag('Java', 'orange', false);
     static readonly JavaFx = new Tag('JavaFx', 'lightcoral', false);
     static readonly JavaEE = new Tag('JavaEE', 'sienna', false);
+    static readonly Spring = new Tag('Spring', 'green', false);
     static readonly SpringBoot = new Tag('SpringBoot', 'darkgreen', false);
     static readonly RESTApi = new Tag('Rest API', '#16be9d', false);
     static readonly HTMLCSS = new Tag('HTML/CSS', 'dodgerblue', false);

@@ -23,8 +23,8 @@ export class ResumeComponent implements OnInit {
   downloadFile(){
     const link = this.rendered.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/cv_Farouk_DOUH.pdf');
-    link.setAttribute('download', 'cv_Farouk_DOUH.pdf');
+    link.setAttribute('href', '../../assets/CV_Farouk__douh.pdf');
+    link.setAttribute('download', 'CV_Farouk__douh.pdf');
     link.click();
     link.remove();
   }
